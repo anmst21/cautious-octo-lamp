@@ -1,0 +1,51 @@
+{
+  "name": "health-huynia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "19.1.0",
+    "yarn": "1.22.19"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.379.1",
+    "@aws-sdk/lib-storage": "^3.379.1",
+    "@aws-sdk/s3-request-presigner": "^3.379.1",
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.1425.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "googleapis": "^122.0.0",
+    "gridfs-stream": "^1.1.1",
+    "http-proxy-middleware": "^2.0.6",
+    "langchain": "^0.0.147",
+    "mongoose": "^7.3.3",
+    "multer": "^1.4.5-lts.1",
+    "multer-gridfs-storage": "^5.0.2",
+    "multer-s3": "^3.0.1",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^2.0.22",
+    "passport": "0.5",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-circular-menu": "^2.4.2",
+    "react-countdown": "^2.3.5",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.5",
+    "yup": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "yarn --cwd client run dev",
+    "dev": "concurrently \"yarn run client\" \"yarn run server\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
